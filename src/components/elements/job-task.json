@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_elements_job_tasks",
+  "info": {
+    "displayName": "Job Task"
+  },
+  "options": {},
+  "attributes": {
+    "task": {
+      "type": "text"
+    }
+  }
+}

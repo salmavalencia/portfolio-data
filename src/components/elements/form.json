@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_elements_forms",
+  "info": {
+    "displayName": "form",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "nameInput": {
+      "type": "component",
+      "required": true,
+      "repeatable": false,
+      "component": "elements.input"
+    },
+    "emailInput": {
+      "type": "component",
+      "required": true,
+      "repeatable": false,
+      "component": "elements.input"
+    },
+    "messageInput": {
+      "type": "component",
+      "required": true,
+      "repeatable": false,
+      "component": "elements.input"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "skills_teches",
+  "info": {
+    "singularName": "skills-tech",
+    "pluralName": "skills-teches",
+    "displayName": "Skills Tech"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}

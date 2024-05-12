@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_elements_job_positions",
+  "info": {
+    "displayName": "Job Position"
+  },
+  "options": {},
+  "attributes": {
+    "organization": {
+      "type": "string"
+    },
+    "position": {
+      "type": "string"
+    },
+    "duration": {
+      "type": "string"
+    },
+    "tasks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.job-task"
+    }
+  }
+}

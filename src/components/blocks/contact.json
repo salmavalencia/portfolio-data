@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_blocks_contacts",
+  "info": {
+    "displayName": "Contact"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "form": {
+      "type": "component",
+      "required": true,
+      "repeatable": false,
+      "component": "elements.form"
+    },
+    "button": {
+      "type": "component",
+      "required": true,
+      "repeatable": false,
+      "component": "elements.button"
+    },
+    "errorMessage": {
+      "type": "string",
+      "required": true
+    },
+    "successMessage": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

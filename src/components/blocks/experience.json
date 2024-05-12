@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_blocks_experiences",
+  "info": {
+    "displayName": "Experience"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "experiences": {
+      "type": "component",
+      "required": true,
+      "repeatable": true,
+      "component": "elements.job-position"
+    }
+  }
+}

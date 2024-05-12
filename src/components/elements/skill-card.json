@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_elements_skill_cards",
+  "info": {
+    "displayName": "Skill Card",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "skills_teches": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::skills-tech.skills-tech"
+    }
+  }
+}

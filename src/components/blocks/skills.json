@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_blocks_skills",
+  "info": {
+    "displayName": "Skills",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "card": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.skill-card",
+      "required": true
+    }
+  }
+}

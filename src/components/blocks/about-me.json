@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_blocks_about_mes",
+  "info": {
+    "displayName": "About Me",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "skills_teches": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::skills-tech.skills-tech"
+    }
+  }
+}

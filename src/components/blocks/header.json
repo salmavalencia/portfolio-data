@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_blocks_headers",
+  "info": {
+    "displayName": "Header"
+  },
+  "options": {},
+  "attributes": {
+    "navbar": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.link"
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.button"
+    }
+  }
+}
