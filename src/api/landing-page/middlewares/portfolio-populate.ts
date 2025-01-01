@@ -15,6 +15,10 @@ const populate = {
   },
   blocks: {
     populate: {
+      image: {
+        populate: true,
+        fields: ["name", "alternativeText", "url"]
+      },
       form: {
         populate: {
           nameInput: {
