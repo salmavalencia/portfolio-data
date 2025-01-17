@@ -30,6 +30,7 @@ export interface BlocksContact extends Schema.Component {
     button: Attribute.Component<'elements.button'> & Attribute.Required;
     errorMessage: Attribute.String & Attribute.Required;
     successMessage: Attribute.String & Attribute.Required;
+    tooManyRequests: Attribute.String;
   };
 }
 

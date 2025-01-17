@@ -31,6 +31,9 @@
     "successMessage": {
       "type": "string",
       "required": true
+    },
+    "tooManyRequests": {
+      "type": "string"
     }
   }
 }
