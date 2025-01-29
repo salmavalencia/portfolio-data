@@ -46,6 +46,22 @@ export interface BlocksExperience extends Schema.Component {
   };
 }
 
+export interface BlocksFooter extends Schema.Component {
+  collectionName: 'components_blocks_footers';
+  info: {
+    displayName: 'Footer';
+    description: '';
+  };
+  attributes: {
+    footerText: Attribute.String;
+    social_medias: Attribute.Relation<
+      'blocks.footer',
+      'oneToMany',
+      'api::social-media.social-media'
+    >;
+  };
+}
+
 export interface BlocksHeader extends Schema.Component {
   collectionName: 'components_blocks_headers';
   info: {
@@ -193,6 +209,7 @@ declare module '@strapi/types' {
       'blocks.about-me': BlocksAboutMe;
       'blocks.contact': BlocksContact;
       'blocks.experience': BlocksExperience;
+      'blocks.footer': BlocksFooter;
       'blocks.header': BlocksHeader;
       'blocks.hero': BlocksHero;
       'blocks.skills': BlocksSkills;

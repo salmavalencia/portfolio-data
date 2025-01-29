@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_blocks_footers",
+  "info": {
+    "displayName": "Footer",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "footerText": {
+      "type": "string"
+    },
+    "social_medias": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::social-media.social-media"
+    }
+  }
+}

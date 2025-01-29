@@ -811,7 +811,8 @@ export interface ApiLandingPageLandingPage extends Schema.CollectionType {
         'blocks.experience',
         'blocks.header',
         'blocks.hero',
-        'blocks.skills'
+        'blocks.skills',
+        'blocks.footer'
       ]
     >;
     createdAt: Attribute.DateTime;
@@ -861,6 +862,39 @@ export interface ApiSkillsTechSkillsTech extends Schema.CollectionType {
   };
 }
 
+export interface ApiSocialMediaSocialMedia extends Schema.CollectionType {
+  collectionName: 'social_medias';
+  info: {
+    singularName: 'social-media';
+    pluralName: 'social-medias';
+    displayName: 'Social Media';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    platform: Attribute.String;
+    link: Attribute.String;
+    icon: Attribute.String;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::social-media.social-media',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::social-media.social-media',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface ContentTypes {
@@ -881,6 +915,7 @@ declare module '@strapi/types' {
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
       'api::landing-page.landing-page': ApiLandingPageLandingPage;
       'api::skills-tech.skills-tech': ApiSkillsTechSkillsTech;
+      'api::social-media.social-media': ApiSocialMediaSocialMedia;
     }
   }
 }
