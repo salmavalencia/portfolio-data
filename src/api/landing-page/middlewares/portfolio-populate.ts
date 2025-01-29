@@ -50,6 +50,9 @@ const populate = {
       },
       card: {
         populate: ["skills_teches"]
+      },
+      social_medias: {
+        populate: true
       }
     }
   }
